@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISTRITA Admin - Expanding Trust, Empowering Growth</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div>
+                    <div class="logo-text">VISTRITA ADMIN</div>
+                    <div class="slogan">Expanding Trust, Empowering Growth</div>
+                </div>
+            </div>
+            <div class="user-profile">
+                <div class="profile-pic">RK</div>
+                <div class="profile-info">
+                    <div class="profile-name">Rajesh Kumar</div>
+                    <div class="profile-role">Admin ID: AD1001</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="app-content">
+            <div class="app-header">
+                <div class="app-title">Admin Dashboard</div>
+                <div>Welcome back, Rajesh</div>
+            </div>
+            
+            <div class="app-body">
+                <!-- Broker Dashboard Page -->
+                <div class="page active" id="broker-dashboard">
+                    <div class="dashboard-grid">
+                        <div class="card">
+                            <div class="card-title">
+                                <span>Investor Summary</span>
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat">
+                                <span>Total Investors</span>
+                                <span class="stat-value">24</span>
+                            </div>
+                            <div class="stat">
+                                <span>New This Month</span>
+                                <span class="stat-value">3</span>
+                            </div>
+                            <div class="stat">
+                                <span>Active Investments</span>
+                                <span class="stat-value">18</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-title">
+                                <span>Portfolio Value</span>
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="stat">
+                                <span>Total AUM</span>
+                                <span class="stat-value">₹4.72 Cr</span>
+                            </div>
+                            <div class="stat">
+                                <span>Monthly Growth</span>
+                                <span class="stat-value">+2.3%</span>
+                            </div>
+                            <div class="stat">
+                                <span>YTD Performance</span>
+                                <span class="stat-value">+14.7%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-title">
+                                <span>Compliance</span>
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <div class="stat">
+                                <span>Pending Tasks</span>
+                                <span class="stat-value">2</span>
+                            </div>
+                            <div class="stat">
+                                <span>SEBI Renewal</span>
+                                <span class="stat-value">45 days</span>
+                            </div>
+                            <div class="stat">
+                                <span>KYC Updates</span>
+                                <span class="stat-value">5 required</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="two-column">
+                        <div class="card">
+                            <div class="card-title">Recent Investor Activity</div>
+                            <div class="stat">
+                                <span>Rajesh Kumar invested in Blue Chip Fund</span>
+                                <span class="stat-value">₹5,00,000</span>
+                            </div>
+                            <div class="stat">
+                                <span>Priya Singh requested contact</span>
+                                <span class="stat-value">Pending KYC</span>
+                            </div>
+                            <div class="stat">
+                                <span>Amarnath scheduled consultation</span>
+                                <span class="stat-value">Tomorrow, 11 AM</span>
+                            </div>
+                            <div class="stat">
+                                <span>New signup: Sanjay Mehta</span>
+                                <span class="stat-value">KYC in progress</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-title">Quick Actions</div>
+                            <div class="action-buttons" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                                <button class="btn btn-primary">Add New Investor</button>
+                                <button class="btn btn-primary">Generate Reports</button>
+                                <button class="btn btn-secondary">Send Broadcast</button>
+                                <button class="btn btn-secondary">Schedule Meeting</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Broker Clients Page -->
+                <div class="page" id="broker-clients">
+                    <div class="card">
+                        <div class="card-title">Investor Management</div>
+                        
+                        <div class="search-box">
+                            <input type="text" placeholder="Search investors by name, ID, or contact...">
+                            <button class="btn btn-primary">Search</button>
+                            <button class="btn btn-secondary">Advanced Filters</button>
+                        </div>
+                        
+                        <table class="investor-table">
+                            <thead>
+                                <tr>
+                                    <th>Investor Name</th>
+                                    <th>Investor ID</th>
+                                    <th>Portfolio Value</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Rajesh Kumar</td>
+                                    <td>IN789456</td>
+                                    <td>₹21,32,500</td>
+                                    <td><span class="status-badge status-active">Active</span></td>
+                                    <td>
+                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 12px;">View</button>
+                                        <button class="btn btn-secondary" style="padding: 5px 10px; font-size: 12px;">Message</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Meera Desai</td>
+                                    <td>IN789457</td>
+                                    <td>₹15,78,200</td>
+                                    <td><span class="status-badge status-active">Active</span></td>
+                                    <td>
+                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 12px;">View</button>
+                                        <button class="btn btn-secondary" style="padding: 5px 10px; font-size: 12px;">Message</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Arjun Patel</td>
+                                    <td>IN789458</td>
+                                    <td>₹32,45,800</td>
+                                    <td><span class="status-badge status-active">Active</span></td>
+                                    <td>
+                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 12px;">View</button>
+                                        <button class="btn btn-secondary" style="padding: 5px 10px; font-size: 12px;">Message</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Priya Singh</td>
+                                    <td>Pending</td>
+                                    <td>₹0</td>
+                                    <td><span class="status-badge status-pending">KYC Pending</span></td>
+                                    <td>
+                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 12px;">Verify</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Amarnath K.</td>
+                                    <td>IN789460</td>
+                                    <td>₹8,92,400</td>
+                                    <td><span class="status-badge status-active">Active</span></td>
+                                    <td>
+                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 12px;">View</button>
+                                        <button class="btn btn-secondary" style="padding: 5px 10px; font-size: 12px;">Message</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="two-column">
+                        <div class="card">
+                            <div class="card-title">Onboard New Investor</div>
+                            <div class="form-group">
+                                <label for="new-investor-aadhaar">Aadhaar Number</label>
+                                <input type="text" id="new-investor-aadhaar" class="form-control" placeholder="Enter 12-digit Aadhaar">
+                            </div>
+                            <div class="form-group">
+                                <label for="new-investor-pan">PAN Number</label>
+                                <input type="text" id="new-investor-pan" class="form-control" placeholder="Enter PAN">
+                            </div>
+                            <button class="btn btn-primary">Generate Investor ID</button>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-title">Bulk Actions</div>
+                            <div class="form-group">
+                                <label for="bulk-action">Select Action</label>
+                                <select id="bulk-action" class="form-control">
+                                    <option value="">Select an action</option>
+                                    <option value="message">Send Message</option>
+                                    <option value="statement">Send Portfolio Statement</option>
+                                    <option value="meeting">Schedule Group Meeting</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="investor-group">Select Investor Group</label>
+                                <select id="investor-group" class="form-control">
+                                    <option value="all">All Investors</option>
+                                    <option value="active">Active Investors Only</option>
+                                    <option value="incomplete">Investors with Incomplete KYC</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary">Apply Action</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Broker Communication Page -->
+                <div class="page" id="broker-communication">
+                    <div class="two-column">
+                        <div class="card">
+                            <div class="card-title">Investor Conversations</div>
+                            <div class="chat-container">
+                                <div class="message message-in">
+                                    <strong>Rajesh Kumar:</strong> Hello, I'd like to discuss increasing my equity allocation.
+                                </div>
+                                <div class="message message-out">
+                                    <strong>You:</strong> Sure, I'll prepare some options for our meeting tomorrow.
+                                </div>
+                                <div class="message message-in">
+                                    <strong>Meera Desai:</strong> When will my portfolio statement be available?
+                                </div>
+                                <div class="message message-out">
+                                    <strong>You:</strong> It will be available by the 5th of next month.
+                                </div>
+                                <div class="message message-in">
+                                    <strong>Arjun Patel:</strong> Can we schedule a call to discuss tax-saving options?
+                                </div>
+                            </div>
+                            
+                            <div class="form-group" style="margin-top: 20px;">
+                                <input type="text" class="form-control" placeholder="Type your message...">
+                            </div>
+                            <div class="action-buttons">
+                                <button class="btn btn-primary">Send Message</button>
+                                <button class="btn btn-secondary">Schedule Call</button>
+                                <button class="btn btn-secondary">Attach File</button>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-title">Broadcast Message</div>
+                            <div class="form-group">
+                                <label for="broadcast-subject">Subject</label>
+                                <input type="text" id="broadcast-subject" class="form-control" placeholder="Enter message subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="broadcast-message">Message</label>
+                                <textarea id="broadcast-message" class="form-control" rows="5" placeholder="Type your broadcast message here..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="broadcast-audience">Select Audience</label>
+                                <select id="broadcast-audience" class="form-control">
+                                    <option value="all">All Investors</option>
+                                    <option value="active">Active Investors Only</option>
+                                    <option value="inactive">Investors with Incomplete KYC</option>
+                                    <option value="large">High-Value Investors (> ₹20L)</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary">Send Broadcast</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Broker Analytics Page -->
+                <div class="page" id="broker-analytics">
+                    <div class="two-column">
+                        <div class="card">
+                            <div class="card-title">Performance Analytics</div>
+                            <div class="stat">
+                                <span>Best Performing Portfolio</span>
+                                <span class="stat-value">Arjun Patel (+18.3%)</span>
+                            </div>
+                            <div class="stat">
+                                <span>Most Active Investor</span>
+                                <span class="stat-value">Meera Desai (6 trades)</span>
+                            </div>
+                            <div class="stat">
+                                <span>Asset Class Performance</span>
+                                <span class="stat-value">Equity: +15.2%</span>
+                            </div>
+                            <div class="stat">
+                                <span>Worst Performing Portfolio</span>
+                                <span class="stat-value">Amarnath K. (+8.7%)</span>
+                            </div>
+                            <div class="stat">
+                                <span>Average Portfolio Size</span>
+                                <span class="stat-value">₹19.7L</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-title">Engagement Metrics</div>
+                            <div class="stat">
+                                <span>Average Response Time</span>
+                                <span class="stat-value">2.4 hours</span>
+                            </div>
+                            <div class="stat">
+                                <span>Client Satisfaction</span>
+                                <span class="stat-value">4.8/5</span>
+                            </div>
+                            <div class="stat">
+                                <span>Monthly Consultations</span>
+                                <span class="stat-value">24</span>
+                            </div>
+                            <div class="stat">
+                                <span>New Clients This Month</span>
+                                <span class="stat-value">3</span>
+                            </div>
+                            <div class="stat">
+                                <span>Client Retention Rate</span>
+                                <span class="stat-value">94%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-title">Portfolio Distribution</div>
+                        <div class="chart-container">
+                            Portfolio Distribution Chart (Equity: 62%, Debt: 22%, Hybrid: 12%, Other: 4%)
+                        </div>
+                        <div class="stat">
+                            <span>Equity Investments</span>
+                            <span class="stat-value">62%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 62%;"></div>
+                        </div>
+                        <div class="stat">
+                            <span>Debt Investments</span>
+                            <span class="stat-value">22%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 22%;"></div>
+                        </div>
+                        <div class="stat">
+                            <span>Hybrid Investments</span>
+                            <span class="stat-value">12%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 12%;"></div>
+                        </div>
+                        <div class="stat">
+                            <span>Other Assets</span>
+                            <span class="stat-value">4%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 4%;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Broker Compliance Page -->
+                <div class="page" id="broker-compliance">
+                    <div class="two-column">
+                        <div class="card">
+                            <div class="card-title">Compliance Tasks</div>
+                            <div class="stat">
+                                <span>SEBI License Renewal</span>
+                                <span class="stat-value">Due in 45 days</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%;"></div>
+                            </div>
+                            <div class="stat">
+                                <span>Quarterly Reports</span>
+                                <span class="stat-value">Due in 12 days</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 30%;"></div>
+                            </div>
+                            <div class="stat">
+                                <span>KYC Updates Required</span>
+                                <span class="stat-value">5 investors</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%;"></div>
+                            </div>
+                            <div class="stat">
+                                <span>Monthly Compliance Review</span>
+                                <span class="stat-value">Due in 3 days</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%;"></div>
+                            </div>
+                            <div class="stat">
+                                <span>Annual Audit</span>
+                                <span class="stat-value">Due in 90 days</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-title">Document Upload</div>
+                            <div class="form-group">
+                                <label for="compliance-doc-type">Document Type</label>
+                                <select id="compliance-doc-type" class="form-control">
+                                    <option value="">Select document type</option>
+                                    <option value="kyc">KYC Document</option>
+                                    <option value="sebi">SEBI Compliance</option>
+                                    <option value="report">Financial Report</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="compliance-doc">Select document to upload</label>
+                                <input type="file" id="compliance-doc" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="compliance-notes">Notes</label>
+                                <textarea id="compliance-notes" class="form-control" rows="3" placeholder="Add any notes about this document..."></textarea>
+                            </div>
+                            <button class="btn btn-primary">Upload</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-title">Pending KYC Verifications</div>
+                        <table class="investor-table">
+                            <thead>
+                                <tr>
+                                    <th>Investor Name</th>
+                                    <th>Submitted On</th>
+                                    <th>Document Type</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Priya Singh</td>
+                                    <td>Aug 28, 2023</td>
+                                    <td>Aadhaar + PAN</td>
+                                    <td><span class="status-badge status-pending">Pending Review</span></td>
+                                    <td>
+                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 12px;">Review</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sanjay Mehta</td>
+                                    <td>Aug 30, 2023</td>
+                                    <td>Aadhaar + PAN</td>
+                                    <td><span class="status-badge status-pending">Verification</span></td>
+                                    <td>
+                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 12px;">Review</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Broker Settings Page -->
+                <div class="page" id="broker-settings">
+                    <div class="two-column">
+                        <div class="card">
+                            <div class="card-title">Profile Settings</div>
+                            <div class="form-group">
+                                <label for="admin-name">Full Name</label>
+                                <input type="text" id="admin-name" class="form-control" value="Rajesh Kumar">
+                            </div>
+                            <div class="form-group">
+                                <label for="admin-email">Email Address</label>
+                                <input type="email" id="admin-email" class="form-control" value="rajesh@vistrita.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="admin-phone">Phone Number</label>
+                                <input type="text" id="admin-phone" class="form-control" value="+91 9876543210">
+                            </div>
+                            <div class="form-group">
+                                <label for="admin-id">Admin ID</label>
+                                <input type="text" id="admin-id" class="form-control" value="AD1001" disabled>
+                            </div>
+                            <button class="btn btn-primary">Update Profile</button>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-title">Security Settings</div>
+                            <div class="form-group">
+                                <label for="current-password">Current Password</label>
+                                <input type="password" id="current-password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="new-password">New Password</label>
+                                <input type="password" id="new-password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="password" id="confirm-password" class="form-control">
+                            </div>
+                            <button class="btn btn-primary">Change Password</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-title">Notification Preferences</div>
+                        <div class="two-column">
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" checked> Email notifications
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" checked> SMS alerts
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" checked> Investment alerts
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" checked> Compliance reminders
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" checked> New investor notifications
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox"> Marketing updates
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Save Preferences</button>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-title">System Settings</div>
+                        <div class="two-column">
+                            <div class="form-group">
+                                <label for="language">Language</label>
+                                <select id="language" class="form-control">
+                                    <option value="en">English</option>
+                                    <option value="hi">Hindi</option>
+                                    <option value="ta">Tamil</option>
+                                    <option value="te">Telugu</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="date-format">Date Format</label>
+                                <select id="date-format" class="form-control">
+                                    <option value="dd-mm-yyyy">DD-MM-YYYY</option>
+                                    <option value="mm-dd-yyyy">MM-DD-YYYY</option>
+                                    <option value="yyyy-mm-dd">YYYY-MM-DD</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="time-zone">Time Zone</label>
+                                <select id="time-zone" class="form-control">
+                                    <option value="ist">India Standard Time (IST)</option>
+                                    <option value="utc">Coordinated Universal Time (UTC)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="currency">Currency</label>
+                                <select id="currency" class="form-control">
+                                    <option value="inr">Indian Rupee (₹)</option>
+                                    <option value="usd">US Dollar ($)</option>
+                                    <option value="eur">Euro (€)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Save System Settings</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Taskbar -->
+        <div class="taskbar">
+            <a class="task-icon active" data-page="broker-dashboard">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a class="task-icon" data-page="broker-clients">
+                <i class="fas fa-user-friends"></i>
+                <span>Clients</span>
+            </a>
+            <a class="task-icon" data-page="broker-communication">
+                <i class="fas fa-comments"></i>
+                <span>Communication</span>
+            </a>
+            <a class="task-icon" data-page="broker-analytics">
+                <i class="fas fa-chart-pie"></i>
+                <span>Analytics</span>
+            </a>
+            <a class="task-icon" data-page="broker-compliance">
+                <i class="fas fa-file-contract"></i>
+                <span>Compliance</span>
+            </a>
+            <a class="task-icon" data-page="broker-settings">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 VISTRITA. All rights reserved. | Expanding Trust, Empowering Growth</p>
+        <p>Secure & regulated platform</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

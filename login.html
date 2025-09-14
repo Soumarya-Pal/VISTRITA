@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISTRITA - Login & Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="brand-section">
+            <div class="brand-logo">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <h1 class="brand-title">VISTRITA</h1>
+            <p class="brand-subtitle">Expanding Trust, Empowering Growth</p>
+            
+            <div class="brand-features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div>
+                        <h3>Secure & Regulated</h3>
+                        <p>Your investments are protected with industry-leading security</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h3>Expert Advisors</h3>
+                        <p>Connect with SEBI-registered investment advisors</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div>
+                        <h3>Wealth Growth</h3>
+                        <p>Access curated investment opportunities for your goals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="auth-section">
+            <div class="back-button" id="back-button">
+                <i class="fas fa-arrow-left"></i> Back
+            </div>
+            
+            <div class="auth-header">
+                <h2 class="auth-title" id="auth-main-title">Welcome to VISTRITA</h2>
+                <p class="auth-subtitle" id="auth-main-subtitle">Select your role to continue</p>
+            </div>
+            
+            <!-- Role Selection -->
+            <div class="role-selection" id="role-selection">
+                <div class="role-card" data-role="investor">
+                    <div class="role-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="role-title">Investor</h3>
+                    <p class="role-description">I want to invest and grow my wealth</p>
+                </div>
+                
+                <div class="role-card" data-role="broker">
+                    <div class="role-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="role-title">Broker/Admin</h3>
+                    <p class="role-description">I'm a registered financial advisor</p>
+                </div>
+            </div>
+            
+            <!-- Investor Type Selection -->
+            <div class="investor-type" id="investor-type">
+                <div class="type-card" data-type="new">
+                    <div class="type-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3 class="type-title">New Investor</h3>
+                    <p class="type-description">I'm new to VISTRITA</p>
+                </div>
+                
+                <div class="type-card" data-type="existing">
+                    <div class="type-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3 class="type-title">Existing Investor</h3>
+                    <p class="type-description">I already have an account</p>
+                </div>
+            </div>
+            
+            <!-- Auth Tabs -->
+            <div class="auth-tabs" id="auth-tabs">
+                <div class="auth-tab active" data-tab="login">Login</div>
+                <div class="auth-tab" data-tab="signup">Sign Up</div>
+            </div>
+            
+            <!-- Login Form -->
+            <form class="auth-form" id="login-form">
+                <div class="form-group admin-id-field" id="admin-id-field">
+                    <label for="admin-id">Admin ID</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-id-card input-icon"></i>
+                        <input type="text" id="admin-id" class="form-control" placeholder="Enter your Admin ID">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="login-email">Email Address</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope input-icon"></i>
+                        <input type="email" id="login-email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input type="password" id="login-password" class="form-control" placeholder="Enter your password" required>
+                        <i class="fas fa-eye password-toggle" id="login-password-toggle"></i>
+                    </div>
+                </div>
+                
+                <div class="remember-forgot">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Login</button>
+                
+                <div class="divider">
+                    <span class="divider-text">Or continue with</span>
+                </div>
+                
+                <button type="button" class="btn btn-google">
+                    <i class="fab fa-google google-icon"></i>
+                    Sign in with Google
+                </button>
+                
+                <div class="form-footer">
+                    Don't have an account? <a href="#" id="switch-to-signup">Sign up now</a>
+                </div>
+            </form>
+            
+            <!-- Signup Form -->
+            <form class="auth-form" id="signup-form">
+                <div class="form-group admin-id-field" id="signup-admin-id-field">
+                    <label for="signup-admin-id">Admin ID</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-id-card input-icon"></i>
+                        <input type="text" id="signup-admin-id" class="form-control" placeholder="Enter your Admin ID">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user input-icon"></i>
+                        <input type="text" id="signup-name" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-email">Email Address</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope input-icon"></i>
+                        <input type="email" id="signup-email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-phone">Phone Number</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-phone input-icon"></i>
+                        <input type="tel" id="signup-phone" class="form-control" placeholder="Enter your phone number" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input type="password" id="signup-password" class="form-control" placeholder="Create a password" required>
+                        <i class="fas fa-eye password-toggle" id="signup-password-toggle"></i>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-confirm-password">Confirm Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input type="password" id="signup-confirm-password" class="form-control" placeholder="Confirm your password" required>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Create Account</button>
+                
+                <div class="divider">
+                    <span class="divider-text">Or sign up with</span>
+                </div>
+                
+                <button type="button" class="btn btn-google">
+                    <i class="fab fa-google google-icon"></i>
+                    Sign up with Google
+                </button>
+                
+                <div class="terms-text">
+                    By creating an account, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                </div>
+                
+                <div class="form-footer">
+                    Already have an account? <a href="#" id="switch-to-login">Login now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">
+        <i class="fas fa-check-circle"></i> <span id="notification-text"></span>
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>

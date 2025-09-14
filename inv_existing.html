@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISTRITA Investor - Expanding Trust, Empowering Growth</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="inv_existing.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div>
+                    <div class="logo-text">VISTRITA INVESTOR</div>
+                    <div class="slogan">Expanding Trust, Empowering Growth</div>
+                </div>
+            </div>
+            <div class="user-profile">
+                <div class="profile-pic">RK</div>
+                <div class="profile-info">
+                    <div class="profile-name">Rajesh Kumar</div>
+                    <div class="profile-role">Investor ID: IN789456</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="app-content">
+            <div class="app-header">
+                <div class="app-title">Investor Dashboard</div>
+                <div>Welcome back, Rajesh</div>
+            </div>
+            
+            <div class="app-body">
+                <!-- Investor Dashboard Page -->
+                <div class="page active" id="investor-dashboard">
+                    <div class="kyc-banner">
+                        <div class="kyc-text">Complete your KYC to start investing</div>
+                        <button class="btn btn-primary">Verify Now</button>
+                    </div>
+                    
+                    <div class="dashboard-grid">
+                        <div class="card">
+                            <div class="card-title">
+                                <span>Portfolio Value</span>
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                            <div class="stat">
+                                <span>Total Investment</span>
+                                <span class="stat-value">₹18,75,000</span>
+                            </div>
+                            <div class="stat">
+                                <span>Current Value</span>
+                                <span class="stat-value">₹21,32,500</span>
+                            </div>
+                            <div class="stat">
+                                <span>Overall Returns</span>
+                                <span class="stat-value">+13.8%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-title">
+                                <span>Asset Allocation</span>
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <div class="stat">
+                                <span>Equity Funds</span>
+                                <span class="stat-value">55%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 55%;"></div>
+                            </div>
+                            <div class="stat">
+                                <span>Debt Funds</span>
+                                <span class="stat-value">25%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 25%;"></div>
+                            </div>
+                            <div class="stat">
+                                <span>Hybrid Funds</span>
+                                <span class="stat-value">20%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-title">
+                                <span>Recent Performance</span>
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="stat">
+                                <span>1 Month Return</span>
+                                <span class="stat-value">+2.3%</span>
+                            </div>
+                            <div class="stat">
+                                <span>3 Month Return</span>
+                                <span class="stat-value">+5.7%</span>
+                            </div>
+                            <div class="stat">
+                                <span>1 Year Return</span>
+                                <span class="stat-value">+14.7%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="two-column">
+                        <div class="card">
+                            <div class="card-title">Your Admins</div>
+                            <div class="community-grid">
+                                <div class="admin-card">
+                                    <div class="admin-card-header">
+                                        <h3>Financial Wealth Partners</h3>
+                                        <p>Admin ID: AD1001</p>
+                                    </div>
+                                    <div class="admin-card-body">
+                                        <div class="admin-stat">
+                                            <span>Experience</span>
+                                            <span>12 years</span>
+                                        </div>
+                                        <div class="admin-stat">
+                                            <span>Specialization</span>
+                                            <span>Equity, Portfolio Management</span>
+                                        </div>
+                                        <div class="admin-stat">
+                                            <span>Rating</span>
+                                            <span>4.8 ★</span>
+                                        </div>
+                                        <button class="btn btn-primary" style="width: 100%; margin-top: 10px;">Contact</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-title">Quick Actions</div>
+                            <div class="action-buttons" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                                <button class="btn btn-primary">Invest Now</button>
+                                <button class="btn btn-primary">Withdraw Funds</button>
+                                <button class="btn btn-secondary">Request Statement</button>
+                                <button class="btn btn-secondary">Schedule Call</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Investor Portfolio Page -->
+                <div class="page" id="investor-portfolio">
+                    <div class="card">
+                        <div class="card-title">Your Portfolio</div>
+                        <table class="investor-table">
+                            <thead>
+                                <tr>
+                                    <th>Fund Name</th>
+                                    <th>Category</th>
+                                    <th>Investment</th>
+                                    <th>Current Value</th>
+                                    <th>Returns</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Blue Chip Equity Fund</td>
+                                    <td>Equity</td>
+                                    <td>₹12,45,000</td>
+                                    <td>₹14,52,300</td>
+                                    <td class="stat-value">+16.2%</td>
+                                    <td>
+                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 12px;">View</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Government Bond Fund</td>
+                                    <td>Debt</td>
+                                    <td>₹4,50,000</td>
+                                    <td>₹4,83,750</td>
+                                    <td class="stat-value">+7.5%</td>
+                                    <td>
+                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 12px;">View</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Balanced Hybrid Fund</td>
+                                    <td>Hybrid</td>
+                                    <td>₹3,80,000</td>
+                                    <td>₹4,23,400</td>
+                                    <td class="stat-value">+11.3%</td>
+                                    <td>
+                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 12px;">View</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Small Cap Fund</td>
+                                    <td>Equity</td>
+                                    <td>₹57,500</td>
+                                    <td>₹70,380</td>
+                                    <td class="stat-value">+22.4%</td>
+                                    <td>
+                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 12px;">View</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-title">Recent Transactions</div>
+                        <table class="investor-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Type</th>
+                                    <th>Fund</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>15 Aug 2023</td>
+                                    <td>Purchase</td>
+                                    <td>Blue Chip Fund</td>
+                                    <td>₹2,00,000</td>
+                                    <td><span class="status-badge status-active">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10 Aug 2023</td>
+                                    <td>Dividend</td>
+                                    <td>Bond Fund</td>
+                                    <td>₹12,450</td>
+                                    <td><span class="status-badge status-active">Credited</span></td>
+                                </tr>
+                                <tr>
+                                    <td>5 Aug 2023</td>
+                                    <td>Purchase</td>
+                                    <td>Small Cap Fund</td>
+                                    <td>₹50,000</td>
+                                    <td><span class="status-badge status-active">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>1 Aug 2023</td>
+                                    <td>Redemption</td>
+                                    <td>Hybrid Fund</td>
+                                    <td>₹75,000</td>
+                                    <td><span class="status-badge status-active">Processed</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Investor Communication Page -->
+                <div class="page" id="investor-communication">
+                    <div class="two-column">
+                        <div class="card">
+                            <div class="card-title">Chat with Financial Wealth Partners</div>
+                            <div class="chat-container">
+                                <div class="message message-out">
+                                    <strong>You:</strong> Hello, I'd like to discuss increasing my equity allocation.
+                                </div>
+                                <div class="message message-in">
+                                    <strong>Admin:</strong> Sure, I'll prepare some options for our meeting tomorrow.
+                                </div>
+                                <div class="message message-out">
+                                    <strong>You:</strong> Also, when will my portfolio statement be available?
+                                </div>
+                                <div class="message message-in">
+                                    <strong>Admin:</strong> It will be available by the 5th of next month.
+                                </div>
+                                <div class="message message-out">
+                                    <strong>You:</strong> Can we schedule a call to discuss tax-saving options?
+                                </div>
+                            </div>
+                            
+                            <div class="form-group" style="margin-top: 20px;">
+                                <input type="text" class="form-control" placeholder="Type your message...">
+                            </div>
+                            <div class="action-buttons">
+                                <button class="btn btn-primary">Send Message</button>
+                                <button class="btn btn-secondary">Request Call</button>
+                                <button class="btn btn-secondary">Attach File</button>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-title">Contact Your Admin</div>
+                            <div class="form-group">
+                                <label for="query-type">Query Type</label>
+                                <select id="query-type" class="form-control">
+                                    <option value="">Select query type</option>
+                                    <option value="investment">New Investment</option>
+                                    <option value="redemption">Redemption</option>
+                                    <option value="statement">Account Statement</option>
+                                    <option value="tax">Tax Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="query-subject">Subject</label>
+                                <input type="text" id="query-subject" class="form-control" placeholder="Enter subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="query-message">Message</label>
+                                <textarea id="query-message" class="form-control" rows="5" placeholder="Type your message here..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="query-urgency">Urgency</label>
+                                <select id="query-urgency" class="form-control">
+                                    <option value="normal">Normal</option>
+                                    <option value="high">High</option>
+                                    <option value="urgent">Urgent</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary">Submit Query</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Investor Reports Page -->
+                <div class="page" id="investor-reports">
+                    <div class="two-column">
+                        <div class="card">
+                            <div class="card-title">Financial Reports</div>
+                            <div class="stat">
+                                <span>Portfolio Statement - July 2023</span>
+                                <span class="stat-value"><button class="btn btn-primary">Download</button></span>
+                            </div>
+                            <div class="stat">
+                                <span>Tax Summary - FY 2022-23</span>
+                                <span class="stat-value"><button class="btn btn-primary">Download</button></span>
+                            </div>
+                            <div class="stat">
+                                <span>Transaction History (Q2 2023)</span>
+                                <span class="stat-value"><button class="btn btn-primary">Download</button></span>
+                            </div>
+                            <div class="stat">
+                                <span>Capital Gains Report</span>
+                                <span class="stat-value"><button class="btn btn-primary">Download</button></span>
+                            </div>
+                            <div class="stat">
+                                <span>Annual Portfolio Review</span>
+                                <span class="stat-value"><button class="btn btn-primary">Download</button></span>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-title">Tax Saving Suggestions</div>
+                            <p>Based on your portfolio, we recommend:</p>
+                            <ul style="margin: 10px 0 10px 20px;">
+                                <li>Consider ELSS funds for Section 80C benefits</li>
+                                <li>Tax-loss harvesting on underperforming assets</li>
+                                <li>Review holding periods for long-term gains benefits</li>
+                                <li>Explore NPS for additional tax benefits</li>
+                                <li>Consider health insurance premium for Section 80D</li>
+                            </ul>
+                            <button class="btn btn-primary">Schedule Tax Consultation</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-title">Custom Report Generator</div>
+                        <div class="two-column">
+                            <div class="form-group">
+                                <label for="report-type">Report Type</label>
+                                <select id="report-type" class="form-control">
+                                    <option value="portfolio">Portfolio Statement</option>
+                                    <option value="transaction">Transaction History</option>
+                                    <option value="tax">Tax Report</option>
+                                    <option value="performance">Performance Report</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="report-period">Time Period</label>
+                                <select id="report-period" class="form-control">
+                                    <option value="monthly">Monthly</option>
+                                    <option value="quarterly">Quarterly</option>
+                                    <option value="half-yearly">Half-Yearly</option>
+                                    <option value="yearly">Yearly</option>
+                                    <option value="custom">Custom Range</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="report-format">Format</label>
+                            <select id="report-format" class="form-control">
+                                <option value="pdf">PDF</option>
+                                <option value="excel">Excel</option>
+                                <option value="csv">CSV</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary">Generate Report</button>
+                    </div>
+                </div>
+                
+                <!-- Investor Learning Page -->
+                <div class="page" id="investor-learning">
+                    <div class="card">
+                        <div class="card-title">Learning Hub</div>
+                        <div class="learning-grid">
+                            <div class="learning-card">
+                                <img src="https://img.youtube.com/vi/6nL5D8XMNMY/maxresdefault.jpg" alt="Investment Basics">
+                                <div class="learning-card-body">
+                                    <h3>Investment Basics for Beginners</h3>
+                                    <p>Learn the fundamentals of investing and how to get started.</p>
+                                    <div class="action-buttons">
+                                        <button class="btn btn-primary">Watch Video</button>
+                                        <button class="btn btn-secondary">Read Article</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="learning-card">
+                                <img src="https://img.youtube.com/vi/Jcfs3afqGdI/maxresdefault.jpg" alt="Asset Allocation">
+                                <div class="learning-card-body">
+                                    <h3>Understanding Asset Allocation</h3>
+                                    <p>How to diversify your investments across different asset classes.</p>
+                                    <div class="action-buttons">
+                                        <button class="btn btn-primary">Watch Video</button>
+                                        <button class="btn btn-secondary">Read Article</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="learning-card">
+                                <img src="https://img.youtube.com/vi/9aQ5cPzKUSc/maxresdefault.jpg" alt="Long-term Wealth">
+                                <div class="learning-card-body">
+                                    <h3>Long-term Wealth Creation</h3>
+                                    <p>Strategies for building wealth over time through investing.</p>
+                                    <div class="action-buttons">
+                                        <button class="btn btn-primary">Watch Video</button>
+                                        <button class="btn btn-secondary">Read Article</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="learning-card">
+                                <img src="https://img.youtube.com/vi/3SrrL2hKhz8/maxresdefault.jpg" alt="Tax Planning">
+                                <div class="learning-card-body">
+                                    <h3>Tax Planning for Investors</h3>
+                                    <p>Learn how to optimize your investments for tax efficiency.</p>
+                                    <div class="action-buttons">
+                                        <button class="btn btn-primary">Watch Video</button>
+                                        <button class="btn btn-secondary">Read Article</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="learning-card">
+                                <img src="https://img.youtube.com/vi/5xdfVAPvv9A/maxresdefault.jpg" alt="Risk Management">
+                                <div class="learning-card-body">
+                                    <h3>Risk Management in Investing</h3>
+                                    <p>Understand how to manage risk in your investment portfolio.</p>
+                                    <div class="action-buttons">
+                                        <button class="btn btn-primary">Watch Video</button>
+                                        <button class="btn btn-secondary">Read Article</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="learning-card">
+                                <img src="https://img.youtube.com/vi/7T2Z7I5P6-w/maxresdefault.jpg" alt="Market Analysis">
+                                <div class="learning-card-body">
+                                    <h3>Market Analysis Techniques</h3>
+                                    <p>Learn how to analyze market trends and make informed decisions.</p>
+                                    <div class="action-buttons">
+                                        <button class="btn btn-primary">Watch Video</button>
+                                        <button class="btn btn-secondary">Read Article</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-title">Learning Progress</div>
+                        <div class="stat">
+                            <span>Courses Completed</span>
+                            <span class="stat-value">3/12</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 25%;"></div>
+                        </div>
+                        <div class="stat">
+                            <span>Articles Read</span>
+                            <span class="stat-value">7/24</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 29%;"></div>
+                        </div>
+                        <div class="stat">
+                            <span>Videos Watched</span>
+                            <span class="stat-value">5/18</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 28%;"></div>
+                        </div>
+                        <button class="btn btn-primary">View Learning Path</button>
+                    </div>
+                </div>
+                
+                <!-- Investor Settings Page -->
+                <div class="page" id="investor-settings">
+                    <div class="two-column">
+                        <div class="card">
+                            <div class="card-title">Profile Settings</div>
+                            <div class="form-group">
+                                <label for="investor-name">Full Name</label>
+                                <input type="text" id="investor-name" class="form-control" value="Rajesh Kumar">
+                            </div>
+                            <div class="form-group">
+                                <label for="investor-email">Email Address</label>
+                                <input type="email" id="investor-email" class="form-control" value="rajesh.kumar@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="investor-phone">Phone Number</label>
+                                <input type="text" id="investor-phone" class="form-control" value="+91 9876543210">
+                            </div>
+                            <div class="form-group">
+                                <label for="investor-id">Investor ID</label>
+                                <input type="text" id="investor-id" class="form-control" value="IN789456" disabled>
+                            </div>
+                            <button class="btn btn-primary">Update Profile</button>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-title">Security Settings</div>
+                            <div class="form-group">
+                                <label for="current-password">Current Password</label>
+                                <input type="password" id="current-password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="new-password">New Password</label>
+                                <input type="password" id="new-password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="password" id="confirm-password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="two-factor">Two-Factor Authentication</label>
+                                <select id="two-factor" class="form-control">
+                                    <option value="disabled">Disabled</option>
+                                    <option value="enabled">Enabled</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary">Change Password</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-title">Notification Preferences</div>
+                        <div class="two-column">
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" checked> Email notifications
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" checked> SMS alerts
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" checked> Investment alerts
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" checked> Portfolio updates
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox"> Marketing communications
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" checked> Monthly statements
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Save Preferences</button>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-title">Account Preferences</div>
+                        <div class="two-column">
+                            <div class="form-group">
+                                <label for="language">Language</label>
+                                <select id="language" class="form-control">
+                                    <option value="en">English</option>
+                                    <option value="hi">Hindi</option>
+                                    <option value="ta">Tamil</option>
+                                    <option value="te">Telugu</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="date-format">Date Format</label>
+                                <select id="date-format" class="form-control">
+                                    <option value="dd-mm-yyyy">DD-MM-YYYY</option>
+                                    <option value="mm-dd-yyyy">MM-DD-YYYY</option>
+                                    <option value="yyyy-mm-dd">YYYY-MM-DD</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="time-zone">Time Zone</label>
+                                <select id="time-zone" class="form-control">
+                                    <option value="ist">India Standard Time (IST)</option>
+                                    <option value="utc">Coordinated Universal Time (UTC)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="currency">Currency</label>
+                                <select id="currency" class="form-control">
+                                    <option value="inr">Indian Rupee (₹)</option>
+                                    <option value="usd">US Dollar ($)</option>
+                                    <option value="eur">Euro (€)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Save Preferences</button>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-title">Account Management</div>
+                        <div class="action-buttons">
+                            <button class="btn btn-secondary">Export My Data</button>
+                            <button class="btn btn-secondary">Deactivate Account</button>
+                            <button class="btn btn-secondary" style="background-color: #f44336; color: white;">Delete Account</button>
+                        </div>
+                        <p style="margin-top: 15px; font-size: 12px; color: var(--gray);">
+                            Note: Deactivating your account will temporarily disable access. Deleting your account will permanently remove all your data from our systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Taskbar -->
+        <div class="taskbar">
+            <a class="task-icon active" data-page="investor-dashboard">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a class="task-icon" data-page="investor-portfolio">
+                <i class="fas fa-chart-line"></i>
+                <span>Portfolio</span>
+            </a>
+            <a class="task-icon" data-page="investor-communication">
+                <i class="fas fa-comments"></i>
+                <span>Communication</span>
+            </a>
+            <a class="task-icon" data-page="investor-reports">
+                <i class="fas fa-file-alt"></i>
+                <span>Reports</span>
+            </a>
+            <a class="task-icon" data-page="investor-learning">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Learning</span>
+            </a>
+            <a class="task-icon" data-page="investor-settings">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 VISTRITA. All rights reserved. | Expanding Trust, Empowering Growth</p>
+        <p>Secure & regulated platform</p>
+    </footer>
+
+    <script src="inv_existing.js"></script>
+</body>
+</html>

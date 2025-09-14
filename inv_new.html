@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISTRITA New Investor - Expanding Trust, Empowering Growth</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="inv_new.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div>
+                    <div class="logo-text">VISTRITA INVESTOR</div>
+                    <div class="slogan">Expanding Trust, Empowering Growth</div>
+                </div>
+            </div>
+            <div class="auth-buttons">
+                <button class="btn btn-outline">Login</button>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Start Your Investment Journey Today</h1>
+                <p class="hero-subtitle">Join thousands of investors who trust VISTRITA to grow their wealth with secure, regulated, and expert-guided investment opportunities.</p>
+                <button class="btn btn-primary" style="padding: 15px 30px; font-size: 18px;">Get Started</button>
+            </div>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="feature-title">Secure & Regulated</h3>
+                <p class="feature-description">Your investments are protected with industry-leading security measures and full regulatory compliance.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="feature-title">Expert Guidance</h3>
+                <p class="feature-description">Get personalized investment advice from SEBI-registered advisors with proven track records.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <h3 class="feature-title">Wealth Growth</h3>
+                <p class="feature-description">Access curated investment opportunities designed to help you achieve your financial goals.</p>
+            </div>
+        </div>
+        
+        <div class="onboarding-container">
+            <div class="onboarding-header">
+                <h2>New Investor Onboarding</h2>
+                <p>Complete these simple steps to start investing</p>
+            </div>
+            
+            <div class="onboarding-steps">
+                <div class="step completed">
+                    <div class="step-connector"></div>
+                    <div class="step-number">1</div>
+                    <div class="step-title">Account Creation</div>
+                </div>
+                
+                <div class="step active">
+                    <div class="step-connector"></div>
+                    <div class="step-number">2</div>
+                    <div class="step-title">KYC Verification</div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-connector"></div>
+                    <div class="step-number">3</div>
+                    <div class="step-title">Choose Admin</div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-connector"></div>
+                    <div class="step-number">4</div>
+                    <div class="step-title">First Investment</div>
+                </div>
+            </div>
+            
+            <div class="onboarding-body">
+                <div class="form-container">
+                    <h3 class="form-title">Complete Your KYC Verification</h3>
+                    
+                    <div class="kyc-requirements">
+                        <h3>Documents Required for KYC</h3>
+                        <ul>
+                            <li>PAN Card (Mandatory)</li>
+                            <li>Aadhaar Card (Mandatory)</li>
+                            <li>Bank Proof (Canceled cheque or bank statement)</li>
+                            <li>Passport-sized photograph</li>
+                            <li>Signature</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pan-number">PAN Number</label>
+                        <input type="text" id="pan-number" class="form-control" placeholder="Enter your PAN number">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="aadhaar-number">Aadhaar Number</label>
+                        <input type="text" id="aadhaar-number" class="form-control" placeholder="Enter your Aadhaar number">
+                        <p class="form-hint">We need this for instant e-KYC verification</p>
+                    </div>
+                    
+                    <div class="upload-area">
+                        <div class="upload-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <p>Upload PAN Card (Front & Back)</p>
+                        <p class="form-hint">Supported formats: JPG, PNG, PDF. Max size: 2MB</p>
+                    </div>
+                    
+                    <div class="upload-area">
+                        <div class="upload-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <p>Upload Aadhaar Card (Front & Back)</p>
+                        <p class="form-hint">Supported formats: JPG, PNG, PDF. Max size: 2MB</p>
+                    </div>
+                    
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="kyc-progress" style="width: 30%;"></div>
+                    </div>
+                    <p style="text-align: center;">KYC Verification: 30% Complete</p>
+                    
+                    <div class="form-actions">
+                        <button class="btn btn-secondary">Save & Continue Later</button>
+                        <button class="btn btn-primary">Continue Verification</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="admin-browser">
+            <h2 style="text-align: center; margin-bottom: 30px; color: var(--primary-blue);">Browse Verified Admins</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 30px; color: var(--gray);">
+                Connect with SEBI-registered investment advisors who can help you build and manage your portfolio based on your financial goals.
+            </p>
+            
+            <div class="admin-grid">
+                <div class="admin-card">
+                    <div class="admin-card-header">
+                        <h3>Financial Wealth Partners</h3>
+                        <p>Admin ID: AD1001</p>
+                    </div>
+                    <div class="admin-card-body">
+                        <div class="admin-stat">
+                            <span>Experience</span>
+                            <span>12 years</span>
+                        </div>
+                        <div class="admin-stat">
+                            <span>Specialization</span>
+                            <span>Equity, Portfolio Management</span>
+                        </div>
+                        <div class="admin-stat">
+                            <span>Rating</span>
+                            <span>4.8 ★</span>
+                        </div>
+                        <div class="admin-stat">
+                            <span>Clients</span>
+                            <span>250+</span>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="btn btn-outline">View Profile</button>
+                            <button class="btn btn-primary">Select</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="admin-card">
+                    <div class="admin-card-header">
+                        <h3>Wealth Growth Advisors</h3>
+                        <p>Admin ID: AD1002</p>
+                    </div>
+                    <div class="admin-card-body">
+                        <div class="admin-stat">
+                            <span>Experience</span>
+                            <span>8 years</span>
+                        </div>
+                        <div class="admin-stat">
+                            <span>Specialization</span>
+                            <span>Mutual Funds, Retirement Planning</span>
+                        </div>
+                        <div class="admin-stat">
+                            <span>Rating</span>
+                            <span>4.7 ★</span>
+                        </div>
+                        <div class="admin-stat">
+                            <span>Clients</span>
+                            <span>180+</span>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="btn btn-outline">View Profile</button>
+                            <button class="btn btn-primary">Select</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="admin-card">
+                    <div class="admin-card-header">
+                        <h3>Capital Secure Investments</h3>
+                        <p>Admin ID: AD1003</p>
+                    </div>
+                    <div class="admin-card-body">
+                        <div class="admin-stat">
+                            <span>Experience</span>
+                            <span>15 years</span>
+                        </div>
+                        <div class="admin-stat">
+                            <span>Specialization</span>
+                            <span>Debt Instruments, Risk Management</span>
+                        </div>
+                        <div class="admin-stat">
+                            <span>Rating</span>
+                            <span>4.9 ★</span>
+                        </div>
+                        <div class="admin-stat">
+                            <span>Clients</span>
+                            <span>300+</span>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="btn btn-outline">View Profile</button>
+                            <button class="btn btn-primary">Select</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="success-message" id="success-message">
+            <i class="fas fa-check-circle" style="font-size: 24px; margin-bottom: 10px;"></i>
+            <h3>KYC Verification Submitted Successfully!</h3>
+            <p>Your documents are under review. You will be notified once verification is complete.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>VISTRITA - Expanding Trust, Empowering Growth</h3>
+            <p>A secure and regulated platform for all your investment needs</p>
+            
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">FAQ</a>
+            </div>
+            
+            <p>© 2023 VISTRITA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="inv_new.js"></script>
+</body>
+</html>
